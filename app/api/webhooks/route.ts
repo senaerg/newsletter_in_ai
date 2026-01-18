@@ -4,7 +4,7 @@ import { stripe } from "@/lib/stripe"; // your Stripe client
 import { createClient } from "@/lib/supabase/server";
 
 const webhookSecret =
-  "whsec_bc9c0db4602707b75f6c5ea6496cb9124750971f0cb337c6734bf55b7b5dd3d4";
+  "";
 
 export async function POST(req: NextRequest) {
   const payload = await req.text();
